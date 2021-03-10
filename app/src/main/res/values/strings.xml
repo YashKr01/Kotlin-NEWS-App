@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">News</string>
+    <string name="search_news">SEARCH NEWS</string>
+    <string name="news_title">NEWS TITLE</string>
+    <string name="news_description">NEWS DESCRIPTION</string>
+    <string name="published_at">Published At</string>
+    <string name="source">SOURCE</string>
+    <string name="loren_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="news">News</string>
+    <string name="saved">Saved</string>
+    <string name="search">Search</string>
+    <string name="trending">TRENDING</string>
 </resources>
