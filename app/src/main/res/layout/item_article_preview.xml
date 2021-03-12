@@ -5,26 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="120dp"
     android:layout_margin="@dimen/_4sdp"
-    app:cardCornerRadius="@dimen/_14sdp"
+    app:cardCornerRadius="@dimen/_11sdp"
     app:cardElevation="@dimen/_10sdp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/news_image"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imageCard"
             android:layout_width="@dimen/_80sdp"
             android:layout_height="0dp"
             android:layout_marginStart="@dimen/_8sdp"
             android:layout_marginTop="@dimen/_8sdp"
             android:layout_marginBottom="@dimen/_8sdp"
-            android:background="@color/grey"
-            android:contentDescription="@string/app_name"
-            android:scaleType="centerCrop"
+            android:elevation="@dimen/_4sdp"
+            app:cardCornerRadius="@dimen/_11sdp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/news_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop" />
+
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/news_title"
@@ -39,8 +48,8 @@
             android:textColor="@color/black"
             android:textSize="@dimen/_14sdp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/news_image"
-            app:layout_constraintTop_toTopOf="@+id/news_image" />
+            app:layout_constraintStart_toEndOf="@+id/imageCard"
+            app:layout_constraintTop_toTopOf="@+id/imageCard" />
 
         <TextView
             android:id="@+id/news_desc"
@@ -50,7 +59,7 @@
             android:layout_marginBottom="@dimen/_4sdp"
             android:ellipsize="end"
             android:fontFamily="@font/ubuntu_medium"
-            android:maxLines="3"
+            android:maxLines="2"
             android:text="@string/loren_ipsum"
             android:textColor="@color/grey"
             android:textSize="@dimen/_11ssp"
@@ -67,7 +76,7 @@
             android:text="@string/source"
             android:textColor="@color/grey"
             android:textSize="@dimen/_8ssp"
-            app:layout_constraintBottom_toBottomOf="@+id/news_image"
+            app:layout_constraintBottom_toBottomOf="@+id/imageCard"
             app:layout_constraintStart_toStartOf="@+id/news_desc" />
 
         <TextView
