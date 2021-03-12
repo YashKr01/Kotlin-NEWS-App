@@ -1,6 +1,7 @@
-package com.example.news
+package com.example.news.fragments
 
 import androidx.fragment.app.Fragment
+import com.example.news.R
 
 class SearchNewsFragment : Fragment(R.layout.fragment_search_news) {
 }

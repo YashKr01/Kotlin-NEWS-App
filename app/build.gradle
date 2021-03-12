@@ -82,7 +82,4 @@ dependencies {
     // Rounded ImageView
     implementation 'com.makeramen:roundedimageview:2.3.0'
 
-    // Animated Bottom Nav Bar
-    implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.3.4'
-
 }
