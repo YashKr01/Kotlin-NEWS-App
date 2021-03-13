@@ -1,7 +1,7 @@
 
 # Description 
 
-- Application Name - ** KOTLIN NEWS APP**
+- Application Name - **KOTLIN NEWS APP**
 - Architecture Used - MVVM
 - Language Used - Kotlin (v1.3.72)  
 - IDE used - Android Studio (v4.1.2)  
