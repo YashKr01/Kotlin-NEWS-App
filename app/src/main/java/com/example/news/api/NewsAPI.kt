@@ -11,9 +11,9 @@ interface NewsAPI {
     @GET("v2/top-headlines")
     suspend fun getBreakingNews(
         @Query("country")
-        countryCode: String = "us",
+        countryCode: String = "in",
         @Query("page")
-        pageNumber: Int = 1,
+        pageNumber: Int = 5,
         @Query("apiKey")
         apiKey: String = API_KEY
     ): Response<NewsResponse>
@@ -24,7 +24,7 @@ interface NewsAPI {
         @Query("q")
         searchQuery: String,
         @Query("page")
-        pageNumber: Int = 1,
+        pageNumber: Int = 3,
         @Query("apiKey")
         apiKey: String = API_KEY
     ): Response<NewsResponse>

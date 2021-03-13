@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_4sdp"
+    android:elevation="@dimen/_8sdp"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/horizontal_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/grey"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/fade_background"
+            app:layout_constraintBottom_toBottomOf="@id/horizontal_image"
+            app:layout_constraintEnd_toEndOf="@id/horizontal_image"
+            app:layout_constraintStart_toStartOf="@id/horizontal_image"
+            app:layout_constraintTop_toTopOf="@id/horizontal_image" />
+
+        <TextView
+            android:id="@+id/horizontal_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/ubuntu_medium"
+            android:maxLines="2"
+            android:text="@string/loren_ipsum"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="@id/view"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

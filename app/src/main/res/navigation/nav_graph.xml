@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/breakingNewsFragment">
+    app:startDestination="@id/startFragment">
 
     <fragment
         android:id="@+id/breakingNewsFragment"
@@ -48,5 +48,20 @@
         android:id="@+id/articleFragment"
         android:name="com.example.news.fragments.ArticleFragment"
         android:label="fragment_article"
-        tools:layout="@layout/fragment_article" />
+        tools:layout="@layout/fragment_article" >
+        <argument
+            android:name="article"
+            app:argType="com.example.news.models.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.news.fragments.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_breakingNewsFragment"
+            app:destination="@id/breakingNewsFragment"
+            app:popUpTo="@id/breakingNewsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

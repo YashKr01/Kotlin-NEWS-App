@@ -10,4 +10,11 @@
     <string name="saved">Saved</string>
     <string name="search">Search</string>
     <string name="trending">TRENDING</string>
+    <string name="saved_news">SAVED NEWS</string>
+    <string name="_2020_11_8">2020-11-8</string>
+    <string name="top_headlines">Top-Headlines</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="news_app">NEWS APP</string>
+    <string name="get_started">GET STARTED</string>
 </resources>

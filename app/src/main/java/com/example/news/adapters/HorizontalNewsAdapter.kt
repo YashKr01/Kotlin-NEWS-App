@@ -10,14 +10,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.news.R
 import com.example.news.models.Article
+import kotlinx.android.synthetic.main.horizontal_recycler_view.view.*
 import kotlinx.android.synthetic.main.item_article_preview.view.*
 
-class NewsAdapter : RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
+class HorizontalNewsAdapter : RecyclerView.Adapter<HorizontalNewsAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             LayoutInflater.from(parent.context)
-                .inflate(R.layout.item_article_preview, parent, false)
+                .inflate(R.layout.horizontal_recycler_view, parent, false)
         )
     }
 
@@ -29,11 +30,9 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val article = differ.currentList[position]
         holder.itemView.apply {
-            Glide.with(this).load(article.urlToImage).into(news_image)
-            news_source.text = "By - " + article.source.name
-            news_title.text = article.title
-            news_desc.text = article.description
-            news_published.text = article.publishedAt.subSequence(0, 10)
+            Glide.with(this).load(article.urlToImage).into(horizontal_image)
+            horizontal_title.text = article.title
+            //horizontal_published.text = article.publishedAt.subSequence(0, 10)
             setOnClickListener {
                 onItemClickListener?.let { it(article) }
             }
