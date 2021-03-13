@@ -16,3 +16,12 @@
 - Kotlin Coroutines
 - Navigation Components
 
+# AdobeXD Design
+
+ ![](Images/img.PNG)
+
+# Screenshots
+
+ | Home Screen | Top News | Search News | Saved News |
+ --------------|------------|-------------|-----------|
+ | ![Home Screen](Images/img1.jpg) | ![Top News](Images/img2.jpg)  | ![Search News](Images/img4.jpg) | ![Search News](Images/img3.jpg)
